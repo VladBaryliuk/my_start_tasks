@@ -1,0 +1,8 @@
+datafile = open('data.txt', 'r')
+help = "".join(datafile.readlines())
+file = open('file,txt', 'w+')
+file.write(help)
+datafile.close()
+file.close()
+file = open('file,txt', 'r')
+print(file.read())
