@@ -39,7 +39,7 @@ class Warrior:
         print('---------------')
         print(f'{self.__class__.__name__} наносит урон мечом {target.__class__.__name__}')
         target.health -= 3
-        print(f'Здоровье у {target.__class__.__name__}: {target.health}')
+        print(f'Здоровье у {target}: {target.health}')
 
     def _set_health(self, health):
         self.__health = health

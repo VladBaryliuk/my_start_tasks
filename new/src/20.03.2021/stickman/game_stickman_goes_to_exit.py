@@ -91,5 +91,16 @@ class Game:
             self.tk.update()
             time.sleep(0.01)
 
+class Sprite:
+    def __init__(self, game):
+        self.game = game
+        self.endgame = False
+        self.coordinates = None
+    def move(self):
+        print("1")
+    def coords(self):
+        return self.coordinates
+
+
 g = Game()
 g.mainloop()
