@@ -51,6 +51,11 @@ keys = []
 doors = []
 players = []
 def create_level(level_number):
+    exits.clear()
+    walls.clear()
+    keys.clear()
+    doors.clear()
+    players.clear()
     x = 0
     y = 0
     for i in levels[level_number]:
@@ -117,7 +122,7 @@ def player_move(event):
                 create_level(current_level)
                 c.bind_all('<Key>', player_move )
             if current_level == len(levels):
-                c.create_text(50, 50, fill='green')
+                c.create_text(50, 50, text = 'You won')
                 c.unbind_all('<Key>')
                 return
 
